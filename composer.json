@@ -1,0 +1,26 @@
+{
+    "name": "mangosoft/modules",
+    "description": "Laravel Modules Generator",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Mangosoft\\Modules\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mangosoft\\Modules\\ModulesServiceProvider"
+            ]
+        }
+    },
+
+    "scripts": {
+        "post-install-cmd": [
+            "Mangosoft\\Modules\\Composer\\ModulesInstaller::postInstall"
+        ],
+        "post-update-cmd": [
+            "Mangosoft\\Modules\\Composer\\ModulesInstaller::postInstall"
+        ]
+    }
+}

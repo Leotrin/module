@@ -1,0 +1,8 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+use Modules\{{name}}\Http\Controllers\{{name}}ApiController;
+
+Route::prefix('{{lower}}')->group(function () {
+    Route::get('/', [{{name}}ApiController::class, 'index']);
+});

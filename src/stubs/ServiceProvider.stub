@@ -1,0 +1,19 @@
+<?php
+
+namespace Modules\{{name}}\Providers;
+
+use Illuminate\Support\ServiceProvider;
+
+class {{name}}ServiceProvider extends ServiceProvider
+{
+    public function boot(): void
+    {
+        $this->loadMigrationsFrom(base_path('modules/{{name}}/database/migrations'));
+        $this->loadViewsFrom(base_path('modules/{{name}}/resources/views'), '{{lower}}');
+    }
+
+    public function register(): void
+    {
+        $this->app->register({{name}}RouteServiceProvider::class);
+    }
+}
