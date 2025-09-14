@@ -25,12 +25,7 @@ A **lightweight modular system for Laravel** that helps you organize your applic
 
    Or if it’s internal:  
    - Copy the package into your Laravel project.  
-   - Add the service provider in `config/app.php` if not auto-discovered.  
-
-2. Publish configuration (optional):  
-   ```bash
-   php artisan vendor:publish --tag=modules-config
-   ```
+   - Add the service provider in `bootstrap/providers.php` if not auto-discovered.  
 
 ---
 
@@ -51,14 +46,14 @@ This will generate:
       └── Views
 ```
 
-### Create an API-Only Module
+### Extend with creating an API Module
 ```bash
 php artisan make:module Blog --api
 ```
-Generates only:
+Generates also:
 ```
 /modules/Blog
-  ├── Controllers
+  ├── Controllers/Api
   └── Routes/api.php
 ```
 
