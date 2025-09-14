@@ -20,7 +20,7 @@ A **lightweight modular system for Laravel** that helps you organize your applic
 
 1. Install via Composer (if you package this later):  
    ```bash
-   composer require your-vendor/laravel-modular-skeleton
+   composer require mangosoft/modules
    ```
 
    Or if it’s internal:  
