@@ -1,7 +1,14 @@
 {
     "name": "mangosoft/modules",
-    "description": "Laravel Modules Generator",
+    "description": "A lightweight modular system for Laravel that helps you organize your application into independent, self-contained modules. Each module has its own Controllers, Models, Providers, Views, and Routes, making large-scale apps easier to manage, scale, and maintain.",
     "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Leotrin Elmazi",
+            "email": "leotrin@mangosoft.mk"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Mangosoft\\Modules\\": "src/"
@@ -14,7 +21,6 @@
             ]
         }
     },
-
     "scripts": {
         "post-install-cmd": [
             "Mangosoft\\Modules\\Composer\\ModulesInstaller::postInstall"
@@ -22,5 +28,7 @@
         "post-update-cmd": [
             "Mangosoft\\Modules\\Composer\\ModulesInstaller::postInstall"
         ]
-    }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
