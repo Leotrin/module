@@ -29,6 +29,6 @@
             "Mangosoft\\Modules\\Composer\\ModulesInstaller::postInstall"
         ]
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true
 }
